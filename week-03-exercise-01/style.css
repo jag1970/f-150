@@ -1,0 +1,21 @@
+* { box-sizing: border-box;
+    max-width: 600px;
+    margin: auto;
+    padding: 32px;
+    background-color: dimgray;
+    border: 4px double black;
+    h1 {
+        font-size: large;
+        color: black;
+        p {
+            color: black;
+            margin: 16px;
+        }
+    }
+}
+body {
+font-family: sans-serif;
+background-color: azure;
+margin: 20px;
+padding: 20px;
+}
