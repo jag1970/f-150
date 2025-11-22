@@ -5,11 +5,11 @@
 }
 
 body {
-  font-family: "Times New Roman", serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 2;
   color: #111111;
-  background-color: #ffffff;
+  background-color: beige;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -145,6 +145,112 @@ code {
 
 .nav-horizontal+main {
   margin-top: 80px;
+}
+.nav-centered {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #333333;
+  padding: 0 32px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.nav-centered ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+.nav-centered a {
+  display: block;
+  padding: 16px 24px;
+  color: #0066CC;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-centered a:hover {
+  border-bottom: 2px solid #0066CC;
+}
+.nav-centered+main {
+  margin-top: 80px;
+}
+.nav-justified {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: skyblue;
+  padding: 0 32px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.nav-justified ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-justified a {
+  display: block;
+  padding: 16px;
+  color: #333333;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-decoration: none;
+  background-color: #fafafa;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.nav-justified a:hover {
+  background-color: #0066CC;
+  color: #ffffff;
+}
+.nav-justified+main {
+  margin-top: 80px;
+}
+.nav-simple-right {
+  position: fixed;
+  right: 32px;
+  top: 32px;
+  width: 200px;
+}
+
+.nav-simple-right ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-simple-right li {
+  margin-bottom: 8px;
+}
+
+.nav-simple-right a {
+  display: block;
+  padding: 8px 16px;
+  color: black;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-decoration: none;
+  background-color: steelblue;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-simple-right a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #0066CC;
+  color: #ffffff;
+}
+
+.nav-simple-right+main {
+  margin-right: 232px;
 }
 
 .nav-custom {}
