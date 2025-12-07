@@ -1,0 +1,231 @@
+:root {
+ --base-color: #ffffff;
+ --text-color: #000000;
+ --secondary-color: #8d8dff;
+ --color-1: #baaed2;
+ --color-2: #f3f7f9;
+ --color-3: #f6f3f9;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+}
+body {
+    padding: 1em;
+    background-color: var(--base-color);
+}
+h1, h2, h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+nav {
+    margin: 1em auto 3em auto;
+    width: min(1000px, 100%);
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 2em;
+}
+nav li:first-child {
+    margin-right: auto;
+    font-weight: bold;
+}
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+header, section {
+    margin: 2em auto;
+    width: min(75em 100%);
+    background-color: var(--color-1);
+    padding: min(2em 15%);
+    border-radius: 1em;
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+header img {
+    max-width: 100%;
+    border-radius: 1em;
+    object-fit: cover;
+    object-position: bottom;
+}
+.text-container {
+    flex: 0 1 34em;
+}
+.text-container p {
+    margin: .75em 0 1em 0;
+    font-size: 1.25em;
+}
+.cta-button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: var(--secondary-color);
+    padding: .75em 1.25em;
+    border-radius: .25em;
+    font-weight: 400;
+}
+section {
+    padding: 3em min(2em 15%);
+    background-color: var(--color-2);
+    text-align: center;
+}
+h2 {
+    font-size: 2rem;
+}
+section p {
+    margin-top: 1em;
+    font-size: 1.25rem;
+}
+footer {
+    padding-bottom: 1.5em;
+    text-align: center;
+}
+footer a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: var(--text-color);
+}
+footer a:hover {
+    text-decoration: underline;
+}
+@media(max-width: 988px) {
+    header {
+        text-align: center;
+    }
+}
+header .text-container {
+    padding-top: 0;
+
+}
+@media(max-width: 640px) {
+    nav li {
+        display: none;
+    }
+}
+    nav li:first-child,
+    nav li:last-child {
+        display: block;
+    }
+.collection-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: 300px;
+    gap: 1rem;
+    margin: 48px 0;
+    
+}
+
+.collection-card {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background-color: var(--color-3);
+    padding: 16px;
+}
+
+.collection-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    flex-grow: 1;
+    display: block;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    margin-bottom: 16px;
+}
+
+.collection-card h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.collection-card .details {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 16px;
+    font-style: italic;
+}
+
+.collection-card .description {
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+@media (width >= 480px) {
+    .collection-card {
+        flex-basis: 40%;
+    }
+    
+ }
+ @media (width >= 1024px) {
+    .collection-card {
+        flex-basis: 30%;
+    }
+ }
+ .container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+main    {
+    padding: 20px 20px;
+}
+.contact-box {
+    background-color: white;
+    display: flex;
+}
+.contact-left {
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+.contact-right {
+    flex-basis: 40%;
+    padding: 40px;
+    background-color: grey;
+    color: white;
+}
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.input-row .input-group {
+    flex-basis: 45%;
+}
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+label {
+    margin-bottom: 6px;
+    display: block;
+}
